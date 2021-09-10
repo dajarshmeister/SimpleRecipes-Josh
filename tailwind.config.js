@@ -1,11 +1,32 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  purge: [],
+  darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#645cff",
+      },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "0.875rem",
+      },
+    },
+    screens: {
+      sm: "100%",
+      md: "100%",
+      lg: "1140px",
+    },
   },
+
   variants: {
-    extend: {},
+    extend: {
+      margin: ["last"],
+    },
   },
   plugins: [],
 }

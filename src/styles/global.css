@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar {
+  &__brand {
+    width: 200px;
+    margin-right: theme(spacing.10);
+  }
+
+  &__link {
+    @apply text-lg;
+  }
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md;
+  &-primary {
+    @apply bg-primary text-white hover:bg-indigo-700 transition duration-200;
+  }
+}
