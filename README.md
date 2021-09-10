@@ -7,6 +7,11 @@
     - pages
     - styles
 
+## Naming conventions
+
+1.  pages should be lowercased to match slug
+2.  components should be sentence cased.
+
 ## Gatsby Web Fonts
 
 1.  https://www.gatsbyjs.com/plugins/gatsby-plugin-webfonts/?=web%20fonts
@@ -31,3 +36,7 @@
 1.  Create folder "src/assets/images"
 2.  Install [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 3.  Use StaticImage if images are used exactly the same and don't change. If the image is dynamic or being imported through props use GatsbyImage
+
+## Active styles for current page
+
+1.  use activeClassName prop and pass it a class value

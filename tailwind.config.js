@@ -16,11 +16,11 @@ module.exports = {
         DEFAULT: "0.875rem",
       },
     },
-    screens: {
-      sm: "100%",
-      md: "100%",
-      lg: "1140px",
-    },
+    // screens: {
+    //   sm: "100%",
+    //   md: "100%",
+    //   lg: "1140px",
+    // },
   },
 
   variants: {
