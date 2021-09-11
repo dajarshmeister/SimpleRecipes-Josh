@@ -1,0 +1,14 @@
+.recipe {
+  margin-bottom: 2rem;
+  &__thumbnail {
+    margin-bottom: 1rem;
+    border-radius: $border-radius-sm;
+  }
+  &__title {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  &__details {
+    color: $gray-600;
+  }
+}
