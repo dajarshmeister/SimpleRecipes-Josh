@@ -5,9 +5,9 @@ import React from "react"
 const Navbar = () => {
   const links = [
     { name: "Home", url: "" },
+    { name: "About", url: "about" },
     { name: "Recipes", url: "recipes" },
     { name: "Tags", url: "tags" },
-    { name: "About", url: "about" },
   ]
   return (
     <nav className="navbar navbar-expand-lg navbar-light">

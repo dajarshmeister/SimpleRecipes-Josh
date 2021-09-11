@@ -20,6 +20,7 @@
 3. create src/scss/vendors/\_bootstrap.scss
 4. https://getbootstrap.com/docs/5.1/customize/sass/ use this site to copy and paste the template. You can replace "../node_modules/" with "~" as it means the same thing
 5. Import your other partials into this file that effect bootstrap
+6. Import bootstrap into "gatsby-browser.js"
 
 ## Naming conventions
 

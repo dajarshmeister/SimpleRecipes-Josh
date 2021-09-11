@@ -5,7 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "SimpleRecipes",
+  },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
@@ -19,11 +21,7 @@ module.exports = {
           google: [
             {
               family: "Montserrat",
-              variants: ["400"],
-            },
-            {
-              family: "Inconsolata",
-              variants: ["400", "500", "600", "700"],
+              variants: ["300", "400", "500", "600", "700"],
             },
           ],
         },
