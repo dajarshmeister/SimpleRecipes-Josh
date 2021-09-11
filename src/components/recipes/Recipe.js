@@ -4,7 +4,7 @@ const Recipe = () => {
   return (
     <div className="recipe">
       <img
-        src="https://via.placeholder.com/400x150"
+        src="https://via.placeholder.com/500x250"
         alt="Sample title"
         className="recipe__thumbnail img-fluid"
       />

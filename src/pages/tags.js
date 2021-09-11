@@ -1,8 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
+import TagList from "../components/tags/TagList"
 
 const tags = () => {
-  return <Layout>Im the tags page</Layout>
+  return (
+    <Layout>
+      <TagList />
+    </Layout>
+  )
 }
 
 export default tags
