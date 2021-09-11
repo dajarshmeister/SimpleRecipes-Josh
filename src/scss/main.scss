@@ -1,5 +1,9 @@
 @import "./vendors/bootstrap";
+
+@import "./layout/site";
 @import "./layout/navbar";
+@import "./layout/footer";
+
 @import "./components/hero";
 @import "./components/recipe";
 @import "./components/tag";
