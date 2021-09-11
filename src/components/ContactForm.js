@@ -2,7 +2,7 @@ import React from "react"
 
 const ContactForm = () => {
   return (
-    <form className="shadow-lg p-5 rounded">
+    <form className="shadow-lg p-5 rounded mb-5">
       <div class="mb-3">
         <label for="name" class="form-label">
           Name

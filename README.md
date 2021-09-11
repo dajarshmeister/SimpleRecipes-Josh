@@ -50,3 +50,7 @@
 ## Active styles for current page
 
 1.  use activeClassName prop and pass it a class value
+
+## Sticky Footer
+
+All the wrapper elements on the page, html, wrapper etc need to be display flex with 100% height. The footer element can then user margin top auto to have it float to the bottom
