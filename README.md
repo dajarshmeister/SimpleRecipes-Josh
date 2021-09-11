@@ -5,7 +5,11 @@
       - images
     - components
     - pages
-    - styles
+    - scss
+
+## Installing SCSS support
+
+1. https://www.gatsbyjs.com/docs/how-to/styling/sass/
 
 ## Naming conventions
 
@@ -16,11 +20,6 @@
 
 1.  https://www.gatsbyjs.com/plugins/gatsby-plugin-webfonts/?=web%20fonts
 2.  Fonts need to be placed in the extend area of the tailwind config
-
-## Tailwind CSS
-
-1.  https://tailwindcss.com/docs/guides/gatsby
-2.  https://v1.tailwindcss.com/course/setting-up-tailwind-and-postcss
 
 ## Layout Module
 
