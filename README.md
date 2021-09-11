@@ -1,3 +1,5 @@
+# Gatsby Setup
+
 ## Folder Structure
 
 1.  src
@@ -10,6 +12,14 @@
 ## Installing SCSS support
 
 1. https://www.gatsbyjs.com/docs/how-to/styling/sass/
+
+## Bootstrap
+
+1. npm install bootstrap
+2. create src/scss/main.scss
+3. create src/scss/vendors/\_bootstrap.scss
+4. https://getbootstrap.com/docs/5.1/customize/sass/ use this site to copy and paste the template. You can replace "../node_modules/" with "~" as it means the same thing
+5. Import your other partials into this file that effect bootstrap
 
 ## Naming conventions
 
