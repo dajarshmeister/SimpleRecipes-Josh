@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import RecipeList from "../components/recipes/RecipeList"
 import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const about = ({ data }) => {
   const {
@@ -12,24 +13,22 @@ const about = ({ data }) => {
     <Layout>
       <div className="row mb-5">
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start order-last order-md-first">
-          <h1>I'm baby coloring book poke taxidermy</h1>
+          <h1>Learn about our story</h1>
           <p>
-            Taxidermy forage glossier letterpress heirloom before they sold out
-            you probably haven't heard of them banh mi biodiesel chia.
-          </p>
-          <p>
-            Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
-            retro.
+            When I was a young boy I grew up eating food. It was a tasty kind of
+            food but not too tasty.
           </p>
           <Link to="/contact" className="btn btn-primary">
             Contact
           </Link>
         </div>
         <div className="col-md-6 order-first order-md-last">
-          <img
-            src="https://via.placeholder.com/600x350"
-            alt=""
-            className="img-fluid mb-3"
+          <StaticImage
+            className="rounded mb-3"
+            src="../assets/images/about.jpeg"
+            alt="food"
+            layout="fullWidth"
+            aspectRatio={16 / 9}
           />
         </div>
       </div>

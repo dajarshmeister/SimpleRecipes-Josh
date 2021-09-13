@@ -104,7 +104,11 @@ export const query = graphql`
         ingredients
       }
       image {
-        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED, height: 400)
+        gatsbyImageData(
+          placeholder: BLURRED
+          layout: FULL_WIDTH
+          aspectRatio: 1.77
+        )
       }
     }
   }
