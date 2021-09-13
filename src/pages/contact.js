@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { Link, graphql } from "gatsby"
 import RecipeList from "../components/recipes/RecipeList"
 import ContactForm from "../components/ContactForm"
+import SEO from "../components/SEO"
 
 const contact = ({ data }) => {
   const {
@@ -10,6 +11,7 @@ const contact = ({ data }) => {
   } = data
   return (
     <Layout>
+      <SEO title="Contact" />
       <div className="row mb-5">
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start order-last order-md-first">
           <h1>Want To Get In Touch?</h1>

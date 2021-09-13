@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import { BsClockFill, BsClock, BsFillPeopleFill } from "react-icons/bs"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import SEO from "../components/SEO"
 
 const RecipeTemplate = ({ data }) => {
   const {
@@ -20,6 +21,7 @@ const RecipeTemplate = ({ data }) => {
   const imgPath = getImage(image)
   return (
     <Layout>
+      <SEO title={title} />
       <div className="row align-items-center mb-5 gx-5 row-cols-1 row-cols-md-2">
         <div className="col">
           <GatsbyImage

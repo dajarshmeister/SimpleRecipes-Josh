@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import RecipeList from "../components/recipes/RecipeList"
 import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/SEO"
 
 const about = ({ data }) => {
   const {
@@ -11,6 +12,7 @@ const about = ({ data }) => {
   } = data
   return (
     <Layout>
+      <SEO title="About" />
       <div className="row mb-5">
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start order-last order-md-first">
           <h1>Learn about our story</h1>

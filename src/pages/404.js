@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import TagList from "../components/tags/TagList"
 
-const tags = () => {
+const Error = () => {
   return (
     <Layout>
-      <SEO title="Tags" />
-      <TagList />
+      <SEO title="Error" />
+      <h1>Oops! There's been an error</h1>
     </Layout>
   )
 }
 
-export default tags
+export default Error
