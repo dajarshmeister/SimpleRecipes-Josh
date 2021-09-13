@@ -16,7 +16,7 @@ export default function Home({ data }) {
       <SEO title="Home" description="This is the home page" />
       <Hero />
       <div className="row">
-        <div className="col-md-2">
+        <div className="col-md-2 d-none d-md-block">
           <h3>Recipes</h3>
           {tagData.map(tag => {
             const [title, count] = tag
