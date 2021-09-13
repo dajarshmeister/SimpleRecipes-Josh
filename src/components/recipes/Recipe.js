@@ -1,16 +1,30 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
+import { Link } from "gatsby"
+import slugify from "slugify"
 
-const Recipe = () => {
+const Recipe = ({ recipe }) => {
+  const {
+    title,
+    prepTime,
+    cookTime,
+    image: { gatsbyImageData },
+  } = recipe
+  const image = getImage(gatsbyImageData)
+  const slug = slugify(title, { lower: true })
+
   return (
-    <div className="recipe">
-      <img
-        src="https://via.placeholder.com/500x250"
-        alt="Sample title"
+    <Link className="recipe" to={`/${slug}`}>
+      <GatsbyImage
+        image={image}
         className="recipe__thumbnail img-fluid"
+        alt={title}
       />
-      <h3 className="recipe__title">Sample title</h3>
-      <div className="recipe__details">Prep time: 15min | Cook: 5 min</div>
-    </div>
+      <h3 className="recipe__title">{title}</h3>
+      <div className="recipe__details">
+        Prep time: {prepTime}min | Cook: {cookTime}min
+      </div>
+    </Link>
   )
 }
 

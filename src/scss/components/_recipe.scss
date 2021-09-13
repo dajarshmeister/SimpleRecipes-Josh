@@ -1,12 +1,16 @@
 .recipe {
   margin-bottom: 2rem;
+  display: block;
+  text-decoration: none;
   &__thumbnail {
     margin-bottom: 1rem;
     border-radius: $border-radius-sm;
+    height: 9rem;
   }
   &__title {
     font-size: 1.125rem;
     font-weight: bold;
+    color: $dark;
   }
   &__details {
     color: $gray-600;

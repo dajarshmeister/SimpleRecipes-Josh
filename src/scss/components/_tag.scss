@@ -1,7 +1,7 @@
 .tag {
   background: $gray-600;
   border-radius: $border-radius-sm;
-  height: 5rem;
+  height: 6rem;
   color: $white;
   display: flex;
   justify-content: center;
@@ -9,6 +9,7 @@
   margin-bottom: 1rem;
   transition: all 0.2s;
   text-decoration: none;
+  flex-direction: column;
   &:hover {
     background: $primary;
     color: $white;

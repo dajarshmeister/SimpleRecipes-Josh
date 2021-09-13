@@ -42,6 +42,7 @@
 1.  Create folder "src/assets/images"
 2.  Install [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 3.  Use StaticImage if images are used exactly the same and don't change. If the image is dynamic or being imported through props use GatsbyImage
+4.  To apply classes to image itself use "imgClassName"
 
 ## Active styles for current page
 
@@ -50,3 +51,30 @@
 ## Sticky Footer
 
 All the wrapper elements on the page, html, wrapper etc need to be display flex with 100% height. The footer element can then user margin top auto to have it float to the bottom
+
+## Loading Environment Variables
+
+https://www.gatsbyjs.com/plugins/gatsby-source-contentful
+
+1.  .env.development
+2.  .env.production
+
+## Creating Pages dynamically
+
+https://www.gatsbyjs.com/docs/creating-and-modifying-pages/
+
+## File System API
+
+1.  Create a file within the pages folder and it must be named the same name that is in graphql but remove the word "all" from the name. This file will be used as the template to create new pages dynamically. Then you can choose which field you want gatsby to base the slug off of. For instance if you choose the title, gatsby will run a query behind the scenes for recipes and create pages for all recipes and base the slug off title.
+
+## Headless CMS
+
+1.  Make sure pages are set to have unique values
+
+## Icons
+
+1.  [React icons](https://react-icons.github.io/react-icons)
+
+## Query Variables
+
+Query variables allow you to pass in variables dynamically into your queries. We need this for create dynamic templates because when you make a query in your page for the data we need to pass in the title as a query variable to perform our second query. This is what brings in the rest of the page data.

@@ -11,10 +11,11 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <StaticImage
             src="../../assets/images/logo.svg"
             placeholder="tracedSVG"
+            alt="logo"
           />
         </Link>
         <button
@@ -33,7 +34,7 @@ const Navbar = () => {
             {links.map(link => {
               const { name, url } = link
               return (
-                <li className="nav-item">
+                <li className="nav-item" key={name}>
                   <Link
                     className="nav-link"
                     aria-current="page"
@@ -46,7 +47,7 @@ const Navbar = () => {
               )
             })}
           </ul>
-          <Link href="/contact" className="btn btn-primary">
+          <Link to="/contact" className="btn btn-primary">
             Contact
           </Link>
         </div>

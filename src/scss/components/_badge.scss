@@ -1,0 +1,10 @@
+.badge {
+  text-decoration: none;
+  &.bg-primary {
+    color: $white;
+    transition: 0.2s all;
+    &:hover {
+      background: darken($primary, 5%) !important;
+    }
+  }
+}
