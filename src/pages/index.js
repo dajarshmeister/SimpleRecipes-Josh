@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import RecipeList from "../components/recipes/RecipeList"
 import { graphql, Link } from "gatsby"
 import getTags from "../utilities/getTags"
+import SEO from "../components/SEO"
 
 export default function Home({ data }) {
   const {
@@ -12,6 +13,7 @@ export default function Home({ data }) {
   const tagData = getTags(recipes)
   return (
     <Layout>
+      <SEO title="Home" description="This is the home page" />
       <Hero />
       <div className="row">
         <div className="col-md-2">

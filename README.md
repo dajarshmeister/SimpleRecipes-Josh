@@ -98,3 +98,12 @@ Notes: More complicated, more control
 ## Query Variables
 
 Query variables allow you to pass in variables dynamically into your queries. We need this for create dynamic templates because when you make a query in your page for the data we need to pass in the title as a query variable to perform our second query. This is what brings in the rest of the page data.
+
+## Forms
+
+1. Use Formspree
+
+## SEO
+
+1. Install [Gatsby plugin react helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
+2. Create a component called SEO and pass it the appropriate prop values
