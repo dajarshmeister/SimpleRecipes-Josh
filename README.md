@@ -107,3 +107,11 @@ Query variables allow you to pass in variables dynamically into your queries. We
 
 1. Install [Gatsby plugin react helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet)
 2. Create a component called SEO and pass it the appropriate prop values
+
+## Webhooks
+
+Imagine youre in a scenario where you make a content update in your headless cms. The build process wont trigger automatically, you will have to go into either netlify or your local app and redeploy with new content.
+
+1. Go to build hooks in settings netlify, copy the value it gives you
+2. Go to contentful and paste in the url into the webhooks section
+3. Now when any changes are made a post request is sent to netlify to rebuild the app.
