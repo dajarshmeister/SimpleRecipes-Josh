@@ -16,7 +16,7 @@ const contact = ({ data }) => {
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start order-last order-md-first">
           <h1>Want To Get In Touch?</h1>
           <p>
-            Four dollar toast biodiesel plaid salvia actually pickled banjo
+            Four dollar toastf biodiesel plaid salvia actually pickled banjo
             bespoke mlkshk intelligentsia edison bulb synth.
           </p>
           <p>Cardigan prism bicycle rights put a bird on it deep v.</p>
